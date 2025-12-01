@@ -55,17 +55,17 @@ void displayCart() {
     cout << "           " << endl;
     cout << "              *                   " << endl;
     cout << "   *    ===|        *           *    " << endl;
-    cout << "          _|_________________             *" << endl;
+    cout << "          _|_________________     *" << endl;
     cout << "          \\                 /      *" << endl;
-    cout << "        *  \\    CARTS      /  *" << endl;
-    cout << "            \\_____________/           *" << endl;
+    cout << "        *  \\               /  *" << endl;
+    cout << "            \\_____________/      *" << endl;
     cout << "    *        /                         " << endl;
-    cout << "            /______________                *" << endl;
+    cout << "            /______________         *" << endl;
     cout << "             O            O             " << endl;
 
 
 
-    cout << "\n================ CART ===============\n";
+    cout << "\n====================================\n";
 
     if (cart.empty()) {
         cout << "Your cart is empty.\n";
@@ -213,7 +213,6 @@ void checkout() {
 
     double tax = total * 0.20;
     double grandTotal = total;
-
 
     cout << "\n      Tax (20%): P" << fixed << setprecision(2) << tax << "      ";
     cout << "\n     Grand Total: P" << grandTotal << "      " << endl;
