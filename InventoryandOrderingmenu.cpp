@@ -272,7 +272,7 @@ const string BOLD = "\033[1m";
         cout << "\n============ OPTIONS ================\n"
              << " \n"
              << "1. Add Item to Cart\n"
-             << "2. Modify Cart\n"
+             << "2. Add or Remove Item(s) in Cart\n"
              << "3. Display Cart\n"
              << "4. Exit & Checkout\n"
              << "\n=====================================\n"
