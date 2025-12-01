@@ -20,7 +20,7 @@ struct CartItem {
 vector<Item> inventory;
 vector<CartItem> cart;
 
-// Initialize inventory
+// pang initialize ng inv
 void initializeInventory() {
     inventory.push_back({"Barbeque", 20.00, 50});
     inventory.push_back({"Isaw", 10.00, 40});
@@ -31,9 +31,7 @@ void initializeInventory() {
     inventory.push_back({"Liempo", 90.00, 20});
 }
 
-// Display with numbers
-
-
+// para lumabas ang inv
 void displayInventory() {
 
     
@@ -49,7 +47,7 @@ void displayInventory() {
     cout << "\n=====================================\n";   
 }
 
-// Display cart
+// para lumabs yung cart at laman
 void displayCart() {
 
     cout << "           " << endl;
@@ -86,7 +84,7 @@ void displayCart() {
     cout << "Total: P" << total << "\n";
 }
 
-// Add to cart using item number
+// pang add ng cart gamit number
 void addToCart() {
     while (true) {
         displayInventory();
@@ -109,7 +107,7 @@ void addToCart() {
             continue;
         }
 
-        // Check if item already in cart
+        // pang check ng item kung nasa inventory
         bool exists = false;
         for (auto &c : cart) {
             if (c.name == selected.name) {
@@ -132,7 +130,7 @@ void addToCart() {
     }
 }
 
-// Modify cart with number selection
+// modify ng cart / add or remove na din
 void modifyCart() {
 
 
@@ -162,7 +160,7 @@ void modifyCart() {
     cout << "Enter new quantity (0 to remove): ";
     cin >> newQty;
 
-    // Restore inventory stock before modifying
+    // pang restor ng stock sa inv bago ma mod
     for (auto &inv : inventory) {
         if (inv.name == selected.name) {
             inv.quantity += selected.quantity;
@@ -176,7 +174,7 @@ void modifyCart() {
         return;
     }
 
-    // Validate stock
+    // pang validate ng stock
     for (auto &inv : inventory) {
         if (inv.name == selected.name) {
             if (newQty > inv.quantity) {
@@ -194,7 +192,7 @@ void modifyCart() {
     }
 }
 
-// Checkout
+// Resiiboe
 void checkout() {
     if (cart.empty()) {
         cout << "Cart is empty. Enjoy your day!.\n";
@@ -236,7 +234,7 @@ int main() {
     do {
 
         
-    //grilling Text image =======================================================
+    //grilling picture+ =======================================================
 
 const string RESET_COLOR = "\033[0m";
 const string RED = "\033[31m";
